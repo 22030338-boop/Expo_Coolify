@@ -164,14 +164,14 @@ Antes de realizar el despliegue en Coolify, se debe configurar y probar el funci
 Clona el repositorio de la práctica:
 
 ```
-git clone https://github.com/TU-ORGANIZACION/DevNotes_Coolify.git
+git clone https://github.com/PatoHacker458/expo_coolify.git
 
 ```
 
 Ingresa al directorio de trabajo:
 
 ```
-cd DevNotes_Coolify
+cd expo_coolify
 
 ```
 
