@@ -500,9 +500,7 @@ En el asistente:
 
 Localiza el campo **Postgres URL (internal)**.
 Haz clic en el ícono del ojo para revelar la cadena completa (o en el botón de copiar).
-Guarda esta URL; tiene un formato similar a:
-   ```text
-   postgres://postgres:<contraseña>@<identificador_contenedor>:5432/devnotes
+Guarda esta URL
 
 ### Inicializar el esquema en la base de datos de Coolify
 
