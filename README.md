@@ -472,18 +472,30 @@ Una de las grandes ventajas de Coolify frente a plataformas como Vercel es que p
 
 3. Selecciona **Databases** y elige **PostgreSQL**.
 
-4. En el asistente:
+En el asistente:
 
-   * **Name:** `devnotes-db`
+#### Database details
+| Campo en Coolify | Valor a ingresar / configurar | Detalle |
+|---|---|---|
+| **Name** | `devnotes-db` | Nombre para identificar el recurso en el panel |
+| **Description** | *(Opcional / Vacío)* | Puedes dejarlo en blanco |
+| **Image** | `postgres:16-alpine` | Déjalo por defecto |
 
-   * **Database Name:** `devnotes`
+#### Credentials
+| Campo en Coolify | Valor a ingresar / configurar | Detalle |
+|---|---|---|
+| **Username** | `postgres` | Usuario administrador |
+| **Password** | *Copiar la contraseña autogenerada* | Haz clic en el ícono del ojo para verla y cópiala; la necesitarás para el `DATABASE_URL` |
+| **Initial database** | `devnotes` | **Importante:** Cambia el valor por defecto (`postgres`) por `devnotes` |
 
-   * **User:** `postgres`
+#### Initialization
+| Campo en Coolify | Valor |
+|---|---|
+| **Initial database arguments** | *(Dejar vacío)* |
+| **Host authentication method** | *(Dejar vacío)* |
 
-   * Define o permite que Coolify genere una contraseña segura.
-
-5. Haz clic en **Deploy**. Coolify descargará la imagen de PostgreSQL y levantará el contenedor.
-
+4. Haz clic en **Save** (o guarda los cambios).
+5. Haz clic en **Deploy** (o **Start**) en la esquina superior para iniciar el contenedor de PostgreSQL.
 6. Una vez desplegado, revisa la sección **Network**:
 
    * Copia la **Internal Database URL** (esta URL utiliza la red interna de Docker, por ejemplo: `postgresql://postgres:password@devnotes-db:5432/devnotes` o similar). Esta conexión no viaja por internet, lo que garantiza máxima velocidad y seguridad.
