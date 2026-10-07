@@ -132,7 +132,7 @@ export default function DevOpsDashboard() {
                         </div>
                         {/* Título que modificarán en la práctica */}
                         <h1 style={{ fontSize: '1.75rem', fontWeight: 800, margin: '0.4rem 0 0 0', color: '#f8fafc' }}>
-                            Práctica Coolify - DevNotes
+                            Práctica Coolify de Jesús Alejandro Rojas Moreno
                         </h1>
                     </div>
 
