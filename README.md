@@ -504,7 +504,7 @@ Guarda esta URL
 
 ### Inicializar el esquema en la base de datos de Coolify
 
-Entra a la pestaña **Execute / Terminal** de tu recurso PostgreSQL en Coolify (o usa el botón de base de datos) y ejecuta las instrucciones DDL del archivo `scripts/init.sql` para crear la tabla `notas` y los datos iniciales.
+Entra a la pestaña **Execute / Terminal** de tu recurso PostgreSQL en Coolify (o usa el botón de base de datos), ejecuta psql -U postgres -d devnotes y luego las instrucciones DDL del archivo `scripts/init.sql` para crear la tabla `notas` y los datos iniciales.
 
 > ### 📷 Evidencia 4
 >
