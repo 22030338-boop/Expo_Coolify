@@ -535,6 +535,13 @@ Ahora conectaremos el repositorio de GitHub con Coolify para compilar y ejecutar
 
    * **Domains:** Puedes asignar un dominio temporal automático provisto por Coolify (utilizando `sslip.io`, por ejemplo `http://app.127.0.0.1.sslip.io` o tu IP con sslip.io).
 
+   > ⚠️ **Nota sobre dominios en instalaciones locales:**
+> Si instalas Coolify en tu máquina local o red doméstica, Coolify autogenerará un dominio con tu IP pública (`sslip.io`). Al no tener puertos abiertos en tu módem, el navegador mostrará `ERR_CONNECTION_TIMED_OUT`.
+> 
+> Para acceder a tu app:
+> 1. En la configuración de la app en Coolify, asigna en el campo **Domains**: `http://localhost` (sin HTTPS).
+> 2. O bien, en **Ports Exposes**, define `3000:3000` y accede mediante `http://localhost:3000`.
+
 ## 13.1 Configurar las variables de entorno en Coolify
 
 En la pestaña **Environment Variables** del recurso de la aplicación, agrega la variable:
