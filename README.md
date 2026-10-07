@@ -389,7 +389,7 @@ Coolify provee un script de instalación general compatible con cualquier distri
 Abre una terminal con privilegios de administrador (`sudo` o `root`) en tu máquina Linux o WSL2 y ejecuta:
 
 ```
-curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
+curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash
 
 ```
 
