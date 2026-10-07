@@ -498,19 +498,11 @@ En el asistente:
 5. Haz clic en **Deploy** (o **Start**) en la esquina superior para iniciar el contenedor de PostgreSQL.
 6. Una vez desplegado, revisa la sección **Runtime and Network**:
 
-En Coolify, las aplicaciones y bases de datos se comunican mediante la red interna de Docker. Para armar la cadena de conexión:
-
-1. Ve a la sección **General > Credentials**:
-   - Copia el **Username** (`postgres`).
-   - Copia la **Password** autogenerada haciendo clic en el ícono del ojo.
-   - Verifica que **Initial database** sea `devnotes`.
-
-2. Ve a la sección **General > Runtime and network**:
-   - Localiza el **Container Name** / Hostname asignado al contenedor en la red Docker (por ejemplo, `devnotes-db`).
-
-3. Construye tu variable `DATABASE_URL` con el siguiente formato:
-   ```env
-   DATABASE_URL=postgresql://postgres:<CONTRASEÑA>@<HOST_DEL_CONTENEDOR>:5432/devnotes
+Localiza el campo **Postgres URL (internal)**.
+Haz clic en el ícono del ojo para revelar la cadena completa (o en el botón de copiar).
+Guarda esta URL; tiene un formato similar a:
+   ```text
+   postgres://postgres:<contraseña>@<identificador_contenedor>:5432/devnotes
 
 ### Inicializar el esquema en la base de datos de Coolify
 
